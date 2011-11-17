@@ -1,0 +1,14 @@
+/**
+ *	Stylesheet of CS-Stem Hosting Platform UI Prototype for IE7
+ **/
+#header #logo{
+	margin-bottom:55px;
+	}
+
+	#header .clear{
+		display:none;
+		}
+#adsBanner #adsBannerContent .fourthNavC p.information{
+	padding-top:5px;
+	}
+#content{overflow:hidden;}

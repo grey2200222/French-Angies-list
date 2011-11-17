@@ -1,0 +1,132 @@
+/**
+ *	Stylesheet of CS-Stem Hosting Platform UI Prototype for IE6
+ **/
+#header #logo{
+	margin-bottom:55px;
+	}
+	#header .clear{
+		display:none;
+		}
+
+
+#adsBanner ul li{
+	padding-bottom:1px;
+	padding-top:13px;
+	}
+#adsBanner #adsBannerContent .fourthNavC p.information{
+	padding-top:5px;
+	}
+.contentWrapper .listSection .tr,
+.contentWrapper .listSection .br{
+	right:-2px;
+	}
+.contentWrapper .listSection .bl,
+.contentWrapper .listSection .br{
+	bottom:-2px;
+	}
+#contentBottom{
+	padding-bottom:28px;
+	}
+.searchBox label{
+position:relative;
+top:-10px;
+}
+
+/*
+* Widget
+*/
+
+#widget .widgetContent .previewTheme .header {
+	overflow:hidden;
+}
+
+	#widget .widgetContent .previewTheme .header .headerCenter {
+		background-position:left 13px;
+	}
+
+	#widget .widgetContent .previewTheme .header .themeName {
+		line-height:40px;
+	}
+	#widget .widgetContent .previewTheme .header .buttonApply{
+		top:-2px;
+		}
+	
+	#widget .widgetContent .previewTheme .content IMG {
+		margin-top:6px;
+	}
+/**
+*  Profile Page fixing  
+**/
+#profilePage .mainColumn{
+	padding-right:19px;
+}
+	#profilePage .mainColumn .title{
+		cursor:pointer;
+		width:575px;
+		}
+		#profilePage .articleDetail{
+				width:580px;
+				}
+			.articleC{
+				padding-right:0;
+				width:557px;
+				}
+				.articleC .bl,
+				.articleC .br{
+				bottom:-2px;
+				}
+		#profilePage .mainColumn .title .right{
+			cursor:pointer;
+			width:569px;
+			}
+			#profilePage .mainColumn .title .middle{
+				cursor:pointer;
+				width:546px;
+				}
+/*green button bug*/
+.greenBtnBig .right{
+	padding-right:29px;
+	}
+		.confirmSection .greenBtn .middle{
+			padding-right:14px;
+			}
+#skinSwitchWrapper h2 .greenBtn .middle{
+			padding-right:4px;
+	}
+#loginBox .buttonContiner a.loginBtn .middle{
+			padding-right:4px;
+}
+
+.buttonBox .greenBtn .middle{
+	padding-right:4px;
+	}
+
+	.pager .greenBtn .middle,.winnerAnnounceContent .greenBtn .middle {
+		padding-right:4px;
+		}
+	.pager .showAllBtn .middle{
+		padding-right:3px;
+		}
+/*Fixed public page achrivement content */
+.boxFullWidth .achiveList{
+	width:548px;
+	}
+    .boxFullWidth .achiveList .right{
+	    width:532px;
+	    }
+        .boxFullWidth .achiveList .middle{
+	        width:513px;
+        }
+ 
+#popupFog{
+	position:absolute;
+	left:expression(fogDummy = document.documentElement.scrollLeft + "px");
+	top:expression(fogDummy = document.documentElement.scrollTop + "px");
+	width:expression(document.documentElement.clientWidth + "px");
+	height:expression(document.documentElement.clientHeight + "px");
+}
+
+.winnerAnnounce .cornerBtmLeft,
+.winnerAnnounce .cornerBtmRight{
+	bottom:-7px;
+}
