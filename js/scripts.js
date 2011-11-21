@@ -50,15 +50,15 @@ $(function(){
 		event.stopPropagation();
 	});*/
 	function accordion(){
-		if($(this).siblings(".articleDetail").hasClass("hide")){
+		if($(this).siblings(".searchform").hasClass("hide")){
 			$(this).find(".showIcon").css("display","none");
 			$(this).find(".hideIcon").css("display","block");
-			$(this).siblings(".articleDetail").removeClass("hide");
+			$(this).siblings(".searchform").removeClass("hide");
 			$(this).parents("#profilePage .article").css("padding-bottom","0");
 		}else{
 			$(this).find(".showIcon").css("display","block");
 			$(this).find(".hideIcon").css("display","none");
-			$(this).siblings(".articleDetail").addClass("hide");
+			$(this).siblings(".searchform").addClass("hide");
 			$(this).parents("#profilePage .article").css("padding-bottom","18px");
 			}
 	};
@@ -167,6 +167,20 @@ $(function(){
 	});
 
 	
+//Click "Anuuler" button
+	$(".grayBtn").click(function(){
+	  $(document.getElementById("hide_title")).find(".showIcon").css("display","block");
+	  $(document.getElementById("hide_title")).find(".hideIcon").css("display","none");
+	  $(document.getElementById("hide_title")).siblings(".searchform").addClass("hide");
+	  $(document.getElementById("hide_title")).parents("#profilePage .article").css("padding-bottom","18px");
+	});
+	
+//Click "Recherche" button
+	$(".greenBtn").click(function(){
+	  if ($(document.getElementById("searchresult")).hasClass("hide")){
+		$(document.getElementById("searchresult")).removeClass("hide");}
+	});
+
 /* button want a new look - Show widget */
 	$('#skinSwitchSection p.wantNewLookBtn a').click(function() {
 		$(this).hide();
