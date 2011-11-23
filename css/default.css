@@ -1,0 +1,100 @@
+/* 
+    Document   : default
+    Created on : 2011-11-23, 22:09:42
+    Author     : hovey
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.greenBtn:hover {
+    background-position : 0px -45px;
+
+}
+
+.greenBtn:hover .right {
+    background-position : 100% -45px;
+}
+
+.greenBtn:hover .right .middle{
+    background-position : 0px -45px;
+}
+
+.greenBtn, .greenBtnBig {
+    background-position : 0px 0px;
+}
+
+.greenBtn .right, .greenBtnBig .right {
+    background-position : 100% 0px;
+}
+
+.greenBtn .right .middle, .greenBtnBig .right .middle{
+    background-position : 0px 0px;
+}
+
+.greenBtnBig:hover {
+    background-position : 0px -61px;
+
+}
+
+.greenBtnBig:hover .right {
+    background-position : 100% -61px;
+}
+
+.greenBtnBig:hover .right .middle{
+    background-position : 0px -61px;
+}
+
+.grayBtn:hover {
+    background-position : 0px -45px;
+}
+
+.grayBtn:hover .right {
+    background-position : 100% -135px;
+}
+
+.grayBtn:hover .right .middle{
+    background-position : 0px -225px;
+}
+
+.grayBtn {
+    background-position : 0px 0px;
+    position : static;
+}
+
+.grayBtn .right {
+    background-position : 100% -90px;
+    position : static;
+}
+
+.grayBtn .right .middle {
+    background-position : 0px -180px;
+}
+
+
+.mainColumn .searchform, .mainColumn .showIcon {
+    display : none;
+}
+
+.mainColumn .hideIcon {
+    display : block;
+}
+
+.advSearch .searchform, .advSearch .showIcon {
+    display : block;
+}
+
+.advSearch .hideIcon {
+    display : none;
+}
+
+.sideBar {
+    min-height: 862px;
+    height: auto !important;
+    height: 862px;
+    overflow: visible;
+}
