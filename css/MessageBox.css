@@ -1,0 +1,116 @@
+.messagebox-header
+{
+  height:30px;
+  background:url(../i/header_back.gif) repeat-x;
+}
+.messagebox-header-left
+{
+  float:left;
+  height:30px;
+  width:5px;
+  background:url(../i/header_left.gif) no-repeat;
+}
+.messagebox-header-icon
+{
+  float:left;
+  height:30px;
+  width:30px;
+}
+.messagebox-header-text
+{
+  float:left;
+  height:23px;
+  padding:6px 0 0 5px;
+  font-family:Arial,sans-serif;
+  font-size:18px;
+  font-weight:bold;
+  text-decoration:none;color:#392b00;
+}
+
+.messagebox-header-right
+{
+  float:right;
+  height:30px;
+  width:5px;
+  background:url(../i/header_right.gif) no-repeat;
+}
+
+table.MessageBoxList{
+    border-bottom:1px solid #E8E8E8;
+    width:100%;
+	margin-top:20px;
+    margin-bottom:20px;
+    border-collapse:separate;
+}
+
+table.MessageBoxList .col3{
+    width:80px;
+}
+table.MessageBoxList .colAuthor{
+    width:70px;
+}
+table.MessageBoxList .col2{
+    width:70px;
+}
+table.MessageBoxList .col1{
+    width:200px;
+}
+table.MessageBoxList .col11{
+    width:270px;
+}
+table.MessageBoxList td{
+    padding-top:5px;
+    padding-bottom:7px;
+}
+table.MessageBoxList th{
+    vertical-align:middle;
+    text-align:left;
+    padding-top:7px;
+    padding-bottom:7px;
+    color:#414B55;
+    font-family:Arial;
+    font-size:11px;
+    border-bottom:1px solid #fff;
+}
+table.MessageBoxList td{
+    font-size:12px;
+    padding-top:15px;
+    padding-bottom:20px;
+    padding-right:10px;
+    color:#4c4c4c;
+    vertical-align:middle;
+    border-bottom:1px solid #fff;
+    border-top:1px solid #E8E8E8;
+    font-family:Arial;
+}
+table.MessageBoxList td.col4{
+    padding-left:5px;
+}
+table.MessageBoxList td.col1{
+    padding-left:10px;
+}
+table.MessageBoxList td h5{
+    margin-bottom:5px;
+}
+table.MessageBoxList td h5 a,
+table.MessageBoxList td h5 a:visited{
+    text-decoration:none;
+    color:#21A2ED;
+    font-size:18px;
+    font-weight:normal;
+}
+table.MessageBoxList td h5 a,
+table.MessageBoxList td h5 a:visited{
+    font-size:14px;
+}
+table.MessageBoxList td h5 a:hover{
+    text-decoration:underline;
+}
+table.MessageBoxList td.col1 p.info{
+    width:200px;
+    line-height:14px;
+}
+table.MessageBoxList td.col11 p.info{
+    width:270px;
+    line-height:14px;
+}

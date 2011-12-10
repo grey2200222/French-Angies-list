@@ -1,0 +1,171 @@
+/*For "Home page"*/
+/*ads banner*/
+#adsBanner{
+    background:url(../i/adsBannerBG.png) repeat-x left top #f5f5f5;
+    height:425px;
+    padding-top:15px;
+}
+#adsBanner #adsBannerContent{
+    height:336px;
+    width:920px;
+    margin:0 auto;
+}
+#adsBanner #adsBannerContent .navC{
+    height:286px;/*original height 336 but would minus the padding, please keep it in mind*/
+    background:url(../i/adsNavBG.png) no-repeat left top;
+    padding-top:50px;
+    padding-left:65px;
+}
+#adsBanner #adsBannerContent .firstNavC{
+    position:relative;
+}
+#adsBanner #adsBannerContent .navC p.heading{
+    color:#fffffe;
+    font-size:17px;
+    margin-bottom:5px;
+}
+#adsBanner #adsBannerContent .navC h5{
+    margin-bottom:25px;
+    font-size:45px;
+    color:#fffffe;
+}
+#adsBanner #adsBannerContent .navC h5 a,
+#adsBanner #adsBannerContent .navC h5 a:visited{
+    color:#fffffe;
+    text-decoration:none;
+}
+#adsBanner #adsBannerContent .navC h5 a:hover{
+    text-decoration:none;
+}
+#adsBanner #adsBannerContent .firstNavC .btnContainer{
+    padding-left:5px;
+}
+#adsBanner #adsBannerContent .firstNavC .logoBox{
+    position:absolute;
+    left:570px;
+    top:50px;
+}
+#adsBanner #adsBannerContent .firstNavC p.information{
+    color:#fffffe;
+    font-size:24px;
+    margin-bottom:30px;
+    line-height:30px;
+    width:310px;
+    padding-left:10px;
+}
+#adsBanner #adsBannerContent .firstNavC p.information strong{
+    font-size:30px;
+}
+#adsBanner #adsBannerContent .secondNavC p.information{
+    color:#fffffe;
+    font-size:13px;
+    margin-bottom:10px;
+    line-height:15px;
+    padding-left:10px;
+    padding-right:10px;
+}
+#adsBanner #adsBannerContent .secondNavC img{
+    float:left;
+    border:2px solid #fffffd;
+    margin-right:20px;
+}
+#adsBanner #adsBannerContent .thirdNavC h5{
+    margin-bottom:20px;
+    font-size:40px;
+}
+#adsBanner #adsBannerContent .thirdNavC p.information{
+    color:#fffffe;
+    font-size:13px;
+    margin-bottom:10px;
+    line-height:15px;
+    padding-left:10px;
+    padding-right:10px;
+}
+#adsBanner #adsBannerContent .thirdNavC .btnContainer{
+    padding-top:3px;
+}
+#adsBanner #adsBannerContent .fourthNavC{
+    height:316px;/*original height 336 but would minus the padding, please keep it in mind*/
+    padding-top:20px;
+}
+#adsBanner #adsBannerContent .fourthNavC h5{
+    margin-bottom:0px;
+    font-size:36px;
+}
+#adsBanner #adsBannerContent .fourthNavC p.information{
+    color:#fffffe;
+    font-size:13px;
+    line-height:15px;
+    padding-right:10px;
+    padding-top:10px;
+}
+#adsBanner #adsBannerContent .fourthNavC .btnContainer{
+    padding-top:5px;
+}
+#adsBanner #adsBannerContent .fourthNavC img{
+    float:left;
+    border:2px solid #fffffd;
+    margin-right:20px;
+}
+#adsBanner{
+}
+#adsBanner ul{
+    float:left;
+    display:inline;
+    width:100%;
+    height:44px;
+}
+#adsBanner ul li{
+    padding-top:14px;
+    padding-bottom:2px;
+    background:url(../i/adsBannerNavBG.png) repeat-x left top;
+    float:left;
+    display:inline;
+    cursor:pointer;
+    color:#fffffe;
+}
+
+#adsBanner ul li#firstNav{
+    width:200px;
+}
+#adsBanner ul li#secondNav{
+    width:158px;
+}
+
+#adsBanner ul li#thirdNav{
+    width:200px;
+}
+#adsBanner ul li#fourthNav{
+    width:237px;
+}
+
+#adsBanner ul li p{
+    margin-bottom:5px;
+    font-size:12px;
+    color:#757c83;
+}
+#adsBanner ul li.current p{
+    color:#fffffe;
+}
+#adsBanner ul li h5{
+    font-size:13px;
+}
+
+#adsBanner .adsNav{
+    width:920px;
+    margin:0 auto;
+    background:url(../i/adsBannerNavB.png) no-repeat 2px bottom;
+    padding-bottom:42px;
+}
+#adsBanner .adsNav .adsNavL{
+    background:url(../i/adsBannerNavFirst.png) no-repeat left top;
+    padding-left:85px;
+    display:inline-block;
+    width:auto;
+}
+#adsBanner .adsNav .adsNavR{
+    background:url(../i/adsBannerNavLast.png) no-repeat right top;
+    display:inline-block;
+    padding-right:40px;
+    width:auto;
+}

@@ -11,9 +11,600 @@
    Syntax recommendation http://www.w3.org/TR/REC-CSS2/
 */
 
+a,a:visited{
+    text-decoration:none;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:url(../i/BG.gif) repeat-x left top #fff5e7;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+select{
+    width:210px;    
+}
+/*wrapper*/
+#wrapper{
+    width:965px;
+    margin:0 auto;
+}
+/*header*/
+#header{
+    padding-top:61px;
+}
+#header #logo{
+    text-align:center;
+    margin-bottom:50px;
+}
+#header #nav{
+    position:relative;
+    left:50%;
+    float:left;
+    display:inline;
+}
+#header #nav li{
+    display:inline;
+    text-align:center;
+    float:left;
+    margin:0 10px;
+}
+#header #nav li a,
+#header #nav li a:visited{
+    position:relative;
+    font-weight:bold;
+    font-size:15.78px;
+    color:#4b5558;
+    text-decoration:none;
+    padding-left:7px;
+    width:auto;
+    display:inline-block;
+    text-align:center;
+    text-decoration:none;
+    height:34px;
+}
+#header #nav li a .right{
+    cursor:pointer;
+    padding-right:7px;
+    width:auto;
+    display:inline-block;
+}
+#header #nav li a .middle{
+    cursor:pointer;
+    padding-left:8px;
+    padding-right:8px;
+    width:auto;
+    display:inline-block;
+    height:34px;
+    overflow:hidden;
+    line-height:34px;
+}
+#header #nav li.current a,
+#header #nav li.current a:visited{
+    background:url(../i/navActive.png) no-repeat left top;
+}
+#header #nav li.current a .right{
+    background:url(../i/navActive.png) no-repeat right -68px;
+}
+#header #nav li.current a .middle{
+    background:url(../i/navActive.png) repeat-x right -34px;
+}
+#header #nav li.current a span.arrow{
+    background:url(../i/navActiveArrow.gif) no-repeat center bottom;
+    width:11px;
+    height:8px;
+    display:block;
+    position:absolute;
+    bottom:-7px;
+    left:50%;
+    margin-left:-6px;
+}
+
+#header #nav li a .middle:hover{
+    background:url(../i/navActive.png) repeat-x right -34px;
+}
+
+
+#header #nav li.current a:hover{
+    color:#4b5558;
+}
+/*#header #nav li a:hover .right{
+        background:url(../i/navActive.png) no-repeat right -68px;
+        }
+        #header #nav li a:hover .middle{
+                background:url(../i/navActive.png) repeat-x right -34px;
+                }*/
+
+/*content*/
+#content{
+	margin-top:30px;
+}
+#contentTop{
+    background:url(../i/contentT.png) no-repeat center top;
+    padding-top:36px;
+}	
+#contentBottom{
+    background:url(../i/contentBottom.png) no-repeat center bottom;
+    padding-bottom:29px;
+}
+#myAccount #contentBottom{
+    background:url(../i/contentB.png) no-repeat center bottom;
+    padding-bottom:30px;
+}	
+#contentM{
+    background:url(../i/contentM.png) repeat-y center top;
+    padding-left:7px;
+    padding-right:7px;
+    width:951px;
+}	
+h1{
+    background:#31c3f3;
+    color:#fffffe;
+    font-size:30px;
+    font-weight:normal;
+    padding-left:28px;
+    padding-bottom:13px;
+}
+h1 .systemInfo{
+    text-align:right;
+    font-weight:bold;
+    padding-right:33px;
+    float:right;
+    color:#bbebfb;
+    font-size:13px;
+}
+h1 .systemInfo em{
+    padding-top:6px;
+    display:block;
+}
+/*bread crumb and loginBox*/
+.breadLogin{
+    background:url(../i/loginBreadCrumbBG.png) repeat-x left top;
+    padding-right:30px;
+    height:41px;
+    position:relative;
+    line-height:35px;
+    z-index:50;
+    border-top:1px solid #2cb0de;
+}
+#home .breadLogin{
+    border-top:none;
+    line-height:normal;
+    height:20px;
+    padding-top:10px;
+    padding-bottom:5px;
+    background:none;
+    background-color:#32c4f5;
+}
+.breadCrumb{
+    padding-left:28px;
+}
+.breadCrumb span.plainText,
+.breadCrumb a,
+.breadCrumb a:visited{
+    background:url(../i/whiteArrow.gif) no-repeat left center;
+    padding-left:13px;
+    margin-left:7px;
+    display:inline-block;
+    font-size:14px;
+    color:#fffffe;
+}
+.breadCrumb a,
+.breadCrumb a:visited{
+    text-decoration:none;
+}
+.breadCrumb a:hover{
+    text-decoration:underline;
+}
+.breadCrumb a.home,
+.breadCrumb a.home:visited{
+    background:none;
+    margin-left:0;
+    padding-left:0;
+}
+#loginBox{
+    right:0;
+    top:30px;
+    position:absolute;
+    width:414px;
+}
+#loginBoxT{
+    background:url(../i/loginBoxT.png) no-repeat center top;
+    padding-top:11px;
+}
+#loginBoxB{
+    background:url(../i/loginBoxBottom.png) no-repeat center bottom;
+    padding-bottom:11px;
+}
+#loginBoxM{
+    background:url(../i/loginBoxM.png) repeat-y center top;
+}
+#loginBoxC{
+    padding-top:20px;
+    padding:20px 10px 10px;
+    width:360px;
+    margin:0 auto;
+}
+#loginBox  p{
+    margin-bottom:5px;
+    line-height:normal;
+    font-size:12px;
+    color:#363636;
+}
+#loginBox p label{
+    width:65px;
+    text-align:left;
+    float:left;
+    display:inline-block;
+    margin-top:5px;
+    line-height:normal;
+}
+#loginBox p .text{
+    line-height:21px;
+    width:148px;
+}
+#loginBox .buttonContiner{
+    float:right;
+    width:100px;
+    line-height:normal;
+    text-align:center;
+    z-index:11;
+}
+#loginBox .buttonContiner a.loginBtn,
+#loginBox .buttonContiner a.loginBtn:visited{
+    float:right;
+}
+#loginBox .buttonContiner a.register,
+#loginBox .buttonContiner a.register:visited{
+    font-size:12px;
+    color:#414b55;
+    font-weight:bold;
+    text-decoration:underline;
+}
+#loginBox .forget,
+#loginBox .forget:visited{
+    text-decoration:underline;
+    font-size:12px;
+    color:#414b55;
+}
+#loginBox .forget:hover{
+    text-decoration:none;
+}
+.breadLogin .loginSection{
+    float:right;
+    font-size:14px;
+}
+/*Login box*/
+.loginSection {
+    color:#fffffe;
+    font-size:13px;
+    font-weight:bold;
+    font-family:Arial;
+}
+.loginSection a,
+.loginSection a:visited{
+    color:#fffffe;
+    text-decoration:underline;
+}
+.loginSection a:hover{
+    text-decoration:none;
+}
+/*loginBox*/
+
+/*ads banner*/
+#adsBanner{
+    background:url(../i/adsBannerBG.png) repeat-x left top #f5f5f5;
+    height:425px;
+    padding-top:15px;
+}
+#adsBanner #adsBannerContent{
+    height:336px;
+    width:920px;
+    margin:0 auto;
+}
+#adsBanner #adsBannerContent .navC{
+    height:286px;/*original height 336 but would minus the padding, please keep it in mind*/
+    background:url(../i/adsNavBG.png) no-repeat left top;
+    padding-top:50px;
+    padding-left:65px;
+}
+#adsBanner #adsBannerContent .firstNavC{
+    position:relative;
+}
+#adsBanner #adsBannerContent .navC p.heading{
+    color:#fffffe;
+    font-size:17px;
+    margin-bottom:5px;
+}
+#adsBanner #adsBannerContent .navC h5{
+    margin-bottom:25px;
+    font-size:45px;
+    color:#fffffe;
+}
+#adsBanner #adsBannerContent .navC h5 a,
+#adsBanner #adsBannerContent .navC h5 a:visited{
+    color:#fffffe;
+    text-decoration:none;
+}
+#adsBanner #adsBannerContent .navC h5 a:hover{
+    text-decoration:none;
+}
+#adsBanner #adsBannerContent .firstNavC .btnContainer{
+    padding-left:5px;
+}
+#adsBanner #adsBannerContent .firstNavC .logoBox{
+    position:absolute;
+    left:570px;
+    top:50px;
+}
+#adsBanner #adsBannerContent .firstNavC p.information{
+    color:#fffffe;
+    font-size:24px;
+    margin-bottom:30px;
+    line-height:30px;
+    width:310px;
+    padding-left:10px;
+}
+#adsBanner #adsBannerContent .firstNavC p.information strong{
+    font-size:30px;
+}
+#adsBanner #adsBannerContent .secondNavC p.information{
+    color:#fffffe;
+    font-size:13px;
+    margin-bottom:10px;
+    line-height:15px;
+    padding-left:10px;
+    padding-right:10px;
+}
+#adsBanner #adsBannerContent .secondNavC img{
+    float:left;
+    border:2px solid #fffffd;
+    margin-right:20px;
+}
+#adsBanner #adsBannerContent .thirdNavC h5{
+    margin-bottom:20px;
+    font-size:40px;
+}
+#adsBanner #adsBannerContent .thirdNavC p.information{
+    color:#fffffe;
+    font-size:13px;
+    margin-bottom:10px;
+    line-height:15px;
+    padding-left:10px;
+    padding-right:10px;
+}
+#adsBanner #adsBannerContent .thirdNavC .btnContainer{
+    padding-top:3px;
+}
+#adsBanner #adsBannerContent .fourthNavC{
+    height:316px;/*original height 336 but would minus the padding, please keep it in mind*/
+    padding-top:20px;
+}
+#adsBanner #adsBannerContent .fourthNavC h5{
+    margin-bottom:0px;
+    font-size:36px;
+}
+#adsBanner #adsBannerContent .fourthNavC p.information{
+    color:#fffffe;
+    font-size:13px;
+    line-height:15px;
+    padding-right:10px;
+    padding-top:10px;
+}
+#adsBanner #adsBannerContent .fourthNavC .btnContainer{
+    padding-top:5px;
+}
+#adsBanner #adsBannerContent .fourthNavC img{
+    float:left;
+    border:2px solid #fffffd;
+    margin-right:20px;
+}
+#adsBanner{
+}
+#adsBanner ul{
+    float:left;
+    display:inline;
+    width:100%;
+    height:44px;
+}
+#adsBanner ul li{
+    padding-top:14px;
+    padding-bottom:2px;
+    background:url(../i/adsBannerNavBG.png) repeat-x left top;
+    float:left;
+    display:inline;
+    cursor:pointer;
+    color:#fffffe;
+}
+
+#adsBanner ul li#firstNav{
+    width:200px;
+}
+#adsBanner ul li#secondNav{
+    width:158px;
+}
+
+#adsBanner ul li#thirdNav{
+    width:200px;
+}
+#adsBanner ul li#fourthNav{
+    width:237px;
+}
+
+#adsBanner ul li p{
+    margin-bottom:5px;
+    font-size:12px;
+    color:#757c83;
+}
+#adsBanner ul li.current p{
+    color:#fffffe;
+}
+#adsBanner ul li h5{
+    font-size:13px;
+}
+
+#adsBanner .adsNav{
+    width:920px;
+    margin:0 auto;
+    background:url(../i/adsBannerNavB.png) no-repeat 2px bottom;
+    padding-bottom:42px;
+}
+#adsBanner .adsNav .adsNavL{
+    background:url(../i/adsBannerNavFirst.png) no-repeat left top;
+    padding-left:85px;
+    display:inline-block;
+    width:auto;
+}
+#adsBanner .adsNav .adsNavR{
+    background:url(../i/adsBannerNavLast.png) no-repeat right top;
+    display:inline-block;
+    padding-right:40px;
+    width:auto;
+}
+.contentWrapper{
+    position:relative;
+    z-index:10;
+    background:#f5f5f5;
+    padding-top:5px;
+    padding-bottom:50px;
+}
+
+.contentMain{
+    padding-left:27px;
+}
+.mainColumn{
+    padding-left:30px;
+    width:609px;/*original is 639px, keep in mind must minus the padding*/
+    float:left;
+    display:inline;
+}
+
+.contentWrapper .mainColumn h2{
+    font-size:25px;
+    color:#b6b6b6;
+    margin-bottom:20px;
+}
+.contentWrapper h2.differentT{
+    margin-bottom:20px;
+    font-size:25px;
+    color:#414b55;
+}
+.contentWrapper .sectionWrapper{
+    background:url(../i/boxShadow.png) no-repeat right bottom;
+    width:563px;
+    padding-right:10px;
+    padding-bottom:12px;
+    margin-bottom:8px;
+}
+
+.contentWrapper .listSection{
+    width:549px;/*original is 561px, keep in mind must minus the padding*/
+    padding:6px 6px 4px;
+    border:1px solid #dcdcdc;
+    border-right:1px solid #cacaca;
+    border-bottom:1px solid #cacaca;
+    position:relative;
+    z-index:1;
+    background:#fff;
+}
+.contentWrapper .listSection .corner{
+    position:absolute;
+    background-image:url(../i/grayCorner.gif);
+    width:5px;
+    height:5px;
+    display:block;
+    background-repeat:no-repeat;
+    overflow:hidden;
+}
+.contentWrapper .listSection .tl{
+    background-position:0 0;
+    top:-1px;
+    left:-1px;
+}
+.contentWrapper .listSection .tr{
+    background-position:-5px 0;
+    top:-1px;
+    right:-1px;
+}
+.contentWrapper .listSection .bl{
+    background-position:0 -5px;
+    bottom:-1px;
+    left:-1px;
+}
+.contentWrapper .listSection .br{
+    background-position:-5px -5px;
+    bottom:-1px;
+    right:-1px;
+}
+.contentWrapper .listSection dl{
+}
+.contentWrapper .listSection dl dd.image{
+    float:left;
+    width:177px;
+    height:118px;
+    display:block;
+    margin-left:0;
+}
+.contentWrapper .listSection dl dd,
+.contentWrapper .listSection dl dt{
+    margin-left:191px;
+}
+.contentWrapper .listSection dl dt{
+    padding-top:7px;
+    margin-bottom:7px;
+}
+.contentWrapper .listSection dl dt a,
+.contentWrapper .listSection dl dt a:visited{
+    text-decoration:none;
+    color:#414b55;
+    font-size:18px;
+    font-weight:normal;
+}
+.contentWrapper .listSection dl dt a:hover{
+    text-decoration:underline;
+}
+.contentWrapper .listSection dl dd.description{
+    color:#414b55;
+    padding-bottom:13px;
+    font-size:12px;
+    line-height:16px;
+}
+.contentWrapper .listSection dl dd.detail a,
+.contentWrapper .listSection dl dd.detail a:visited{
+    background:url(../i/blueArrow.gif) no-repeat left center;
+    padding-left:12px;
+    text-decoration:none;
+    color:#21a2ed;
+    font-size:12px;
+}
+.contentWrapper .listSection dl dd.detail a:hover{
+    text-decoration:underline;
+}
+
+.mainColumn .searchform, .mainColumn .showIcon {
+    display : none;
+}
+
+.mainColumn .hideIcon {
+    display : block;
+}
+
+.advSearch .searchform, .advSearch .showIcon {
+    display : block;
+}
+
+.advSearch .hideIcon {
+    display : none;
+}
+
+.sideBar {
+    min-height: 862px;
+    height: auto !important;
+    height: 862px;
+    overflow: visible;
+}
+
 .greenBtn:hover {
     background-position : 0px -45px;
-
 }
 
 .greenBtn:hover .right {
@@ -74,27 +665,113 @@
 .grayBtn .right .middle {
     background-position : 0px -180px;
 }
-
-
-.mainColumn .searchform, .mainColumn .showIcon {
-    display : none;
+.greenBtnBig,
+.greenBtnBig:visited{
+    font-size:20px;
+    background:url(../i/greenBtnLBig.png) no-repeat left top;
+    width:auto;
+    display:inline-block;
+    padding-left:52px;
+    height:61px;
+    overflow:hidden;
+    line-height:58px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#fffffe;
+}
+.greenBtnBig .right{
+    cursor:pointer;
+    background:url(../i/greenBtnRBig.png) no-repeat right top;
+    width:auto;
+    display:inline-block;
+    padding-right:30px;
+}
+.greenBtnBig .middle{
+    cursor:pointer;
+    background:url(../i/greenBtnMBig.png) repeat-x left top;
+    width:auto;
+    display:inline-block;
+    padding-left:19px;
+    padding-right:0px;
+    height:61px;
+    overflow:hidden;
+    line-height:58px;
 }
 
-.mainColumn .hideIcon {
-    display : block;
+.greenBtn,
+.greenBtn:visited{
+    font-size:13px;
+    background:url(../i/greenBtnL.png) no-repeat left top;
+    width:auto;
+    display:inline-block;
+    padding-left:37px;
+    height:45px;
+    overflow:hidden;
+    line-height:42px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#fffffe;
+}
+.greenBtn .right{
+    cursor:pointer;
+    background:url(../i/greenBtnR.png) no-repeat right top;
+    width:auto;
+    display:inline-block;
+    padding-right:22px;
+}
+.greenBtn .middle{
+    cursor:pointer;
+    background:url(../i/greenBtnM.png) repeat-x left top;
+    width:auto;
+    display:inline-block;
+    padding-left:6px;
+    padding-right:5px;
+    height:45px;
+    overflow:hidden;
+    line-height:42px;
 }
 
-.advSearch .searchform, .advSearch .showIcon {
-    display : block;
+.grayBtn,
+.grayBtn:visited{
+    font-size:13px;
+    background:url(../i/grayBtn.png) no-repeat 0 0;
+    width:auto;
+    display:inline-block;
+    padding-left:22px;
+    height:45px;
+    overflow:hidden;
+    line-height:42px;
+    text-decoration:none;
+    font-weight:bold;
+    color:#fffffe;
 }
-
-.advSearch .hideIcon {
-    display : none;
+.grayBtn .right{
+    cursor:pointer;
+    background:url(../i/grayBtn.png) no-repeat 100% -90px;
+    width:auto;
+    display:inline-block;
+    padding-right:22px;
 }
-
-.sideBar {
-    min-height: 862px;
-    height: auto !important;
-    height: 862px;
-    overflow: visible;
+.grayBtn .middle{
+    cursor:pointer;
+    background:url(../i/grayBtn.png) repeat-x 0 -180px;
+    width:auto;
+    display:inline-block;
+    padding-left:3px;
+    padding-right:3px;
+    height:45px;
+    overflow:hidden;
+    line-height:42px;
+}
+.jsFormElement{
+    position:relative;
+}
+.firstLay{
+    z-index:100;
+}
+.secondLay{
+    z-index:90;
+}
+.thirdLay{
+    z-index:80;
 }

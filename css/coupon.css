@@ -1,0 +1,30 @@
+#couponbar{
+    background:url(../i/Couponbar.png) no-repeat left top;
+    padding-top:36px;
+	padding-bottom:280px;
+	width:500;
+}
+
+#coupontext{
+  font-family: Arial, "Times New Roman";
+  font-size:15px;
+  text-align:left; 
+  padding-left:30px;
+  margin-left:0px;
+  width:680px;
+  display:block;
+}
+
+#printbutton{
+	background:url(../i/print.jpeg) no-repeat right top;
+    width:auto;
+    display:inline-block;
+    padding-left:52px;
+    height:61px;
+    overflow:hidden;
+    line-height:58px;
+    text-decoration:none;
+    font-weight:bold;
+	margin-left:500px;
+    color:#fffffe;
+}

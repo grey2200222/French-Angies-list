@@ -1,0 +1,81 @@
+#top_bar
+{
+    padding: 0 50px;
+    height: 75px;
+    background-image: url('../images/fond_top_bar.png');
+    background-repeat:repeat-x;
+}
+
+#logo_top_bar
+{
+    float:left;
+}
+
+#twitter_top_bar
+{
+    width: 33px;
+    height: 33px;
+    margin: 21px 5px;
+    float:right;
+}
+
+#facebook_top_bar
+{
+    width: 33px;
+    height: 33px;
+    margin: 21px 5px;
+    float:right;
+}
+
+#foursquare_top_bar
+{
+    width: 33px;
+    height: 33px;
+    margin: 21px 5px;
+    float:right;
+}
+
+@font-face
+{
+    font-family: "Helvetica";
+    src: url('polices/HelveticaWorld-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: "Helvetica";
+    font-weight: bold
+    src: url('polices/HelveticaWorld-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: "Helvetica";
+    font-style: italic;
+    src: url('polices/HelveticaWorld-Italic.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: "Helvetica";
+    font-weight: bold;
+    font-style: italic;
+    src: url('polices/HelveticaWorld-BoldItalic.ttf') format('truetype');
+}
+
+html, body
+{
+    height: 100%;
+}
+
+#footer
+{
+    font-family: "Helvetica";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin: 5px auto;
+    z-index:100;
+    color: #447898;
+}

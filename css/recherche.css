@@ -1,0 +1,61 @@
+/*For "Recherche page"*/
+.hideIcon,
+.hideIcon:visited{
+    background:url(../i/showHideArrow.png) no-repeat left top;
+    width:10px;
+    height:7px;
+    float:right;
+    margin-top:15px;
+    overflow:hidden;
+    text-align:right;
+}
+.showIcon,
+.showIcon:visited{
+    background:url(../i/showHideArrow.png) no-repeat left -7px;
+    width:10px;
+    height:7px;
+    float:right;
+    margin-top:15px;
+    overflow:hidden;
+}
+.rankText{
+    font-size:14px;
+    float:right;
+    padding-right:15px;
+    font-weight:bold;
+    margin-left:280px;
+}
+#searchbar{
+    width:409px;
+    text-align:center;
+    margin-top:20px;
+}
+.searchname{
+    margin-top:20px;
+    margin-left:20px;
+    margin-bottom:10px;
+    color:#00f;
+    text-decoration:underline;
+    display: block;
+}
+
+.searchresultdetail{
+    margin-top:0px;
+    margin-left:40px;
+    margin-bottom:20px;
+    display: block;
+}
+
+.searchblock{	
+    margin-top:30px;
+    margin-left:30px;
+    margin-bottom:10px;
+    width:700px;
+    padding:6px 6px 4px;
+    border:1px solid #dcdcdc;
+    border-right:1px solid #cacaca;
+    border-bottom:1px solid #cacaca;
+    position:relative;
+    z-index:1;
+    background:#fff;
+}
