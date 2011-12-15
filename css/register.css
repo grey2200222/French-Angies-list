@@ -1,0 +1,62 @@
+/* 
+    Document   : my_account
+    Created on : 2011-12-13, 0:11:45
+    Author     : hovey
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.picSelection {
+    float: left;
+    height: 500px;
+    width: 400px;
+    margin: 30px;
+    padding: 5px;
+    border: 1px solid #aaa;
+    position: relative;
+    cursor: pointer;
+    -ms-filter: alpha(opacity=50);
+    filter: alpha(opacity=50);
+    opacity: .50;
+}
+
+.picSelection:hover {
+    -ms-filter: alpha(opacity=100);
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.picSelection .customer {
+    background-position: center;
+    background-image: url("../i/customer.png");
+    width: 400px;
+    height: 500px;
+}
+
+.picSelection .merchant {
+    background-position: center;
+    background-image: url("../i/merchant.png");
+    width: 400px;
+    height: 500px;
+}
+
+.picSelection .textLayer {
+    background: black;
+    -ms-filter: alpha(opacity=75);
+    filter: alpha(opacity=75);
+    opacity: .75;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 100px;
+    color: white;
+    position: absolute;
+    margin: 5px;
+    font-size: 30px;
+    padding: 20px;
+}

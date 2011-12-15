@@ -3,19 +3,19 @@
     <head>
         <!-- Meta Tag -->
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <title>Angies list Platform | Recherche</title>
+        <title>Angies list Platform | My Account</title>
         <!-- External CSS -->
         <link href="css/reset.css" type="text/css" rel="stylesheet" media="screen" />
         <link href="css/jqtransform.css" type="text/css" rel="stylesheet" media="screen" />
         <link href="css/screen.css" type="text/css" rel="stylesheet" media="screen" />
-	<link href="css/recherche.css" type="text/css" rel="stylesheet" />
         <link href="css/default.css" type="text/css" rel="stylesheet" />
+        <link href="css/my_account.css" type="text/css" rel="stylesheet" />
 
         <!-- External Javascript -->
         <script src="js/jquery-1.4.4.min.js" type="text/javascript"></script>
         <script src="js/jquery.jqtransform.js" type="text/javascript"></script>
         <script src="js/login.js" type="text/javascript"></script>
-        <script src="js/recherche.js" type="text/javascript"></script>
+        <script src="js/account.js" type="text/javascript"></script>
     </head>
 
     <body>
@@ -24,7 +24,7 @@
                 <div id="logo"><a href="home.html" title="NONAMESITE.COM"><img src="i/logo.png" alt="logo" /></a></div>
                 <ul id="nav">
                     <li><a href="home.html" title="Home"><span class="arrow"></span><span class="right"><span class="middle">Home</span></span></a></li>
-                    <li class="current"><a href="recherche.html" title="Recherche"><span class="arrow"></span><span class="right"><span class="middle">Recherche</span></span></a></li>
+                    <li><a href="recherche.html" title="Recherche"><span class="arrow"></span><span class="right"><span class="middle">Recherche</span></span></a></li>
                     <li><a href="FAQ.html" title="FAQ"><span class="arrow"></span><span class="right"><span class="middle">FAQ</span></span></a></li>
                     <li><a href="Contact.html" title="Nous-contacter"><span class="arrow"></span><span class="right"><span class="middle">Nous contacter</span></span></a></li>
                     <li><a href="MessageBox.html" title="MessageBox"><span class="arrow"></span><span class="right"><span class="middle">MessageBox</span></span></a></li>
@@ -41,7 +41,7 @@
                                     Member Count: 99
                                     <em>Thu, 13th, February, 2010</em>
                                 </span>
-                                Recherches
+                                Register for <span class="account">Merchant</span>
                             </h1>
                             <div class="breadLogin">
                                 <div class="loginSection">
@@ -87,75 +87,92 @@
                             <!--End .breadLogin-->
                             <div class="contentWrapper">
                                 <div class="mainColumn">
-                                    <div class="title" id="hide_title"><div class="right"><div class="middle"> <a class="hideIcon hide" href="javascript:;"></a><a class="showIcon" href="javascript:;"></a><span class="rankText">Recherche avancée</span>Recherche</div></div></div>
-                                    <input  id="searchbar" type="text" class="text" style="font-size:20px; float:left; 	height:27px; line-height:27px; text-align:left;"/>
-                                    <a href="javascript:;" title="Recherche" class="greenBtn button" style="float:left; margin-top:16px; margin-left:30px"><span class="right"><span class="middle">Recherche</span></span></a>
-                                    <div class="searchform">
-                                        <div class="form">
-                                            <p class="registerHandle">
-                                                <label>Métier</label>
-                                                <select>
-                                                    <option>Plombier</option>
-                                                    <option>Electricien</option>
-                                                    <option>Femme de menage</option>
-                                                    <option>Médecin</option>
-                                                    <option>XXXX</option>
-                                                    <option>XXXXX</option>
-                                                </select>
-                                                <span class="clear"></span>
-                                            </p>
-                                            <p><label>Nom</label><input type="text" class="text"  />
-                                            </p>
-                                            <p><label>Prénom</label><input type="text" class="text"  />
-                                            </p>
-                                            <p><label>Email</label><input type="text" class="text"  />
-                                            </p>
-                                            <p><label>Code postal</label><input type="text" class="text"/>
-                                            </p>
+                                    <h2>Basic Info.</h2>
+                                    <div class="sectionWrapper">
+                                        <div class="listSection">
+                                            <span class="corner tl"></span>
+                                            <span class="corner tr"></span>
+                                            <span class="corner bl"></span>
+                                            <span class="corner br"></span>
+                                            <table>
+                                                <tr >
+                                                    <td  width="150"><label for="firstname">Account/Email*</label></td>
+                                                    <td><input name="firstname" type="text" /></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="firstname">Password*</label></td>
+                                                    <td><input name="firstname" type="password"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="firstname">Confirm Password*</label></td>
+                                                    <td><input name="firstname" type="password"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="firstname">First Name </label></td>
+                                                    <td><input name="firstname" type="text"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="lastname">Last Name </label></td>
+                                                    <td><input name="lastname" type="text"/></td>
+                                                </tr>
+                                            </table>
                                         </div>
-                                        <div class="confirmSection">
-                                            <a href="javascript:;" title="Recherche" class="greenBtn button"><span class="right"><span class="middle">Recherche</span></span></a>
-                                            <a href="javascript:;" title="Annuler" class="grayBtn button"><span class="right"><span class="middle">Annuler</span></span></a>
+                                    </div>
+                                    <h2>Corp. Detail</h2>
+                                    <div class="sectionWrapper">
+                                        <div class="listSection">
+                                            <span class="corner tl"></span>
+                                            <span class="corner tr"></span>
+                                            <span class="corner bl"></span>
+                                            <span class="corner br"></span>
+                                            <table>
+                                                <tr>
+                                                    <td width="150"><label for="firstname">Postal code</label></td>
+                                                    <td><input name="firstname" type="text"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="lastname">Address </label></td>
+                                                    <td><input name="lastname" type="text"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="firstname">Phone number </label></td>
+                                                    <td><input name="firstname" type="text"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="firstname">Company Name</label></td>
+                                                    <td><input name="firstname" type="text"/></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><label for="firstname">Company Description</label></td>
+                                                    <td><textarea name="firstname" ></textarea></td>
+                                                </tr>
+                                            </table>
                                         </div>
-                                        <div class="clear"></div>
+                                    </div>
+                                    <div class="sectionWrapper">
+                                        <div class="listSection">
+                                            <span class="corner tl"></span>
+                                            <span class="corner tr"></span>
+                                            <span class="corner bl"></span>
+                                            <span class="corner br"></span>
+                                            <center>
+                                                <p>
+                                                    <input id="tos" name="tos" type="checkbox" checked="checked" /><label for="tos" id="tos">* I accept the <a href="FAQ.html">Terms of Service.</a></label>
+                                                </p>
+                                                <button id="submitBtn">Submit</button>
+                                            </center>
+
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- .mainColumn-->
                                 <!-- .sideBar-->
+
                                 <div class="clear"></div>
 
-
-                                <div class="searchresult hide" id="searchresult">
-                                    <div class="searchblock">
-                                        <div class="searchname">
-                                            <a href="XXXXXX" style="" class="search_result"> Mr.ZHENG Huiqi</a>
-                                        </div>
-                                        <div class="searchresultdetail">
-                                            <div>ABCDEGDSHD fdsqfdsfqds fdsqfdsqfqdsfdsfdsqfdsqfdsq fdqsfdsqfdsqfdsqfdsf fdqsfdsf fdqsfdsfds fdqsfdsfqds</div>
-                                            <div style="text-align:right"><img src="i/coupon.jpeg" width="50" height="50" class="CouponPage" onclick= "window.open('Coupon.html'), 'Coupon'"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="searchblock">
-                                        <div class="searchname">
-                                            <a href="XXXXXX" style="" class="search_result"> Mr.ZHENG Huiqi</a>
-                                        </div>
-                                        <div class="searchresultdetail">
-                                            <div>XXXXXXXX XXXXXX XXXXXXXXXX XXXXXXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXXXXX	XXXXXXX XXXXXXXX XXXXXXXXX XXXXXXXXX XXXXXXXX</div>											
-                                        </div>
-                                    </div>
-
-                                    <div class="searchblock">
-                                        <div class="searchname">
-                                            <a href="XXXXXX" style="" class="search_result"> Mr.ZHENG Huiqi</a>
-                                        </div>
-                                        <div class="searchresultdetail">
-                                            <div>XXXXXXXX XXXXXX XXXXXXXXXX XXXXXXXXXXXX XXXXXXXX XXXXXXXX XXXXXXXXXXX	XXXXXXX XXXXXXXX XXXXXXXXX XXXXXXXXX XXXXXXXX</div>
-											<div style="text-align:right"><img src="i/coupon.jpeg" width="50" height="50"></div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
+
+
                             <!-- .contentWrapper-->
                         </div>
                         <!-- #contentM-->

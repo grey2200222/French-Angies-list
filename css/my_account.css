@@ -1,0 +1,55 @@
+/* 
+    Document   : my_account
+    Created on : 2011-12-13, 0:11:45
+    Author     : hovey
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+.account {
+    font-style: italic;
+}
+
+.contentWrapper .sectionWrapper {
+    width: 460px;
+}
+
+.contentWrapper .listSection {
+    width: 450px;
+}
+
+.listSection label {
+    font-weight: bold;
+    color: #666;
+    font-size: 12px;
+}
+
+.listSection td input {
+    margin: 5px 10px;
+    width: 200px;
+}
+
+.listSection td textarea {
+    margin: 5px 10px;
+    width: 200px;
+    height: 100px;
+}
+
+button {
+    border: solid 1px gray;
+    font-size: 15px;
+    padding: 5px 20px;
+    font-weight: bold;
+}
+
+.mainColumn {
+    padding-left: 450px;
+    background-position: 20px 45px;
+    background-image: url('../i/account.jpg');
+    background-repeat: no-repeat;
+}
